@@ -1,0 +1,24 @@
+.container{
+    display:flex;
+    justify-content: center;
+    padding:20px;
+    @media (max-width: 850px) {
+        display: block;
+        text-align: center;
+    }
+}
+.imageMe{
+    text-align:right;
+    margin:10px;
+    @media(max-width: 850px){
+        text-align:center;
+    }
+}
+.textMe{
+    width:60%;
+    margin:10px;
+    @media(max-width: 850px){
+        text-align:center;
+        width:100%;
+    }
+}
