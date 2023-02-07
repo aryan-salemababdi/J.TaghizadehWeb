@@ -1,6 +1,10 @@
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import styles from "./Banner.module.scss"
 const Banner = () => {
+
+
+
+
     const mystyle = {
         background: "url(/images/Javad-Taghizadeh-Firouzjaee2.jpg)",
         margin: "0px",
@@ -32,6 +36,21 @@ const Banner = () => {
                         Researcher <span style={{ color: "red", }}>-</span> Book Writer <span style={{ color: "red", }}>-</span> Professor
                     </Typography>
                 </div>
+                <Button
+                variant="contained"
+                sx={{margin:"10px 0px"}}
+                color="warning"
+                onClick ={()=>{
+                    alert("push to about me page")
+                }}
+                >
+                    <Typography 
+                    fontSize={20}
+                    fontWeight="bold"
+                    >
+                        More Info
+                    </Typography>
+                </Button>
             </div>
         </div>
     )

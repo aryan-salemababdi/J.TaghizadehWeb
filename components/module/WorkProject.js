@@ -10,12 +10,23 @@ const WorkProject = () => {
 
     const itemData = [
         {
-            img: "/images/Javad-Taghizadeh-Firouzjaee.jpg",
+            img: "/images/15163455-1094-b__3208.jpg",
             title: "PHYSIC LECTURE",
             text: "The Physic of Youth Culture Today",
             rows: 2,
             cols: 2,
             featured: true,
+        },
+        {
+            img: "/images/45022370-3376-b__3284.jpg",
+            title: "CONFERENCE",
+            text: "On The Physic Of Astro",
+        },
+        {
+            img: "/images/15163455-1094-b__3208.jpg",
+            title: "PHYSIC LECTURE",
+            text: "The Physic of Youth Culture Today",
+            text: "On The Physic Of Astro",
         },
         {
             img: "/images/45022370-3376-b__3284.jpg",
@@ -46,7 +57,7 @@ const WorkProject = () => {
                                 alt={item.title}
                                 loading="lazy"
                                 width={619}
-                                height={450}
+                                height={250}
                             />
                             <ImageListItemBar
                                 title={item.title}
