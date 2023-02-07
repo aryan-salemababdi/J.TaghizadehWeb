@@ -3,7 +3,6 @@ import ImageList from '@mui/material/ImageList';
 import styles from "../module/Wp.module.scss";
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import ListSubheader from '@mui/material/ListSubheader';
 import { Typography } from '@mui/material';
 
 

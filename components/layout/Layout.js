@@ -7,7 +7,7 @@ import styles from "../layout/Layout.module.scss"
 const Layout = ({ children }) => {
 
     const [open, setOpen] = useState(false)
-    const [background, setBackground] = useState(false)
+    const [scrollTop, setScrollTop] = useState(0);
 
     useEffect(() => {
         const closenavbarsmall = e => {
@@ -18,26 +18,37 @@ const Layout = ({ children }) => {
         document.body.addEventListener("click", closenavbarsmall);
         return () => document.body.removeEventListener("click", closenavbarsmall);
     }, [])
+    useEffect(() => {
+      const handleScroll = (event) => {
+        setScrollTop(window.scrollY);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
 
 
     return (
         <>
-            <header className={styles.container}>
+            <header className={styles.container} style={{background: scrollTop > 20 ? "#ffffff" : "",boxShadow: scrollTop > 20 ? "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px" : ""}}>
                 <div className={open ? styles.menuOpen : styles.menuClose}>
                     <ul>
                         <li>
                             <Link href="/">
-                                <Typography fontSize={20} fontWeight={"bold"} color="white">Home</Typography>
+                                <Typography fontSize={20} fontWeight={"bold"} color={scrollTop > 20 ? "black" : "white"}>Home</Typography>
                             </Link>
                         </li>
                         <li>
                             <Link href="/">
-                                <Typography fontSize={20} fontWeight={"bold"} color="white">Blog</Typography>
+                                <Typography fontSize={20} fontWeight={"bold"}color={scrollTop > 20 ? "black" : "white"}>Blog</Typography>
                             </Link>
                         </li>
                         <li>
                             <Link href="/">
-                                <Typography fontSize={20} fontWeight={"bold"} color="white">About Me</Typography>
+                                <Typography fontSize={20} fontWeight={"bold"} color={scrollTop > 20 ? "black" : "white"}>About Me</Typography>
                             </Link>
                         </li>
                     </ul>
@@ -60,7 +71,7 @@ const Layout = ({ children }) => {
                     <Typography
                         fontSize={30}
                         fontWeight={"bold"}
-                        color="white">
+                        color={scrollTop > 20 ? "black" : "white"}>
                         JT<span>F</span>
                     </Typography>
                 </div>

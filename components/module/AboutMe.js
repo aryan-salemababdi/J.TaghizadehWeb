@@ -11,7 +11,7 @@ const AboutMe = () => {
                         src="/images/PH1200009.jpg"
                         alt="imgMe"
                         width={200}
-                        height={200}
+                        height={250}
                         style={{ borderRadius: "5px" }}
                     />
                 </div>
