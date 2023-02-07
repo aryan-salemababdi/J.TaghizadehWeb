@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 
 const Banner = () => {
     const mystyle = {
-        background: "url(images/michal-parzuchowski-kKf1ZkS_wcs-unsplash.jpg)",
+        background: "url(/images/Javad-Taghizadeh-Firouzjaee2.jpg)",
         margin: "0px",
         height: "calc(100vh)",
         backgroundPosition: "center",
@@ -18,8 +18,11 @@ const Banner = () => {
     };
     return (
         <div style={mystyle}>
-            <Typography fontSize={20} fontWeight="bold">
-                Welcome to the personal page of Dr. Taghizadeh <span style={{color:"red"}}>Firouzjaei</span>
+            <Typography
+                fontSize={25}
+                fontWeight="bold"
+            >
+                Welcome to the personal page of Dr. Taghizadeh <span style={{ color: "red" }}>Firouzjaei</span>
             </Typography>
         </div>
     )
