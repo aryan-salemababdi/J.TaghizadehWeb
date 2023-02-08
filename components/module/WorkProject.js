@@ -3,7 +3,7 @@ import ImageList from '@mui/material/ImageList';
 import styles from "../module/Wp.module.scss";
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import { Typography } from '@mui/material';
+import { Typography, Button } from '@mui/material';
 
 
 const WorkProject = () => {
@@ -44,7 +44,7 @@ const WorkProject = () => {
                     fontWeight="light"
                     color="gray"
                 >
-                    Work & Project
+                    Conferences & Events
                 </Typography>
             </div>
             <div style={{ padding: "10px" }}>
@@ -66,6 +66,22 @@ const WorkProject = () => {
                         </ImageListItem>
                     ))}
                 </ImageList>
+            </div>
+            <div style={{ textAlign: "center" }}>
+                <Button
+                    variant="contained"
+                    color="warning"
+                    onClick={() => {
+                        alert("push to event pages")
+                    }}
+                >
+                    <Typography
+                        fontSize={15}
+                        fontWeight="bold"
+                    >
+                        More Events
+                    </Typography>
+                </Button>
             </div>
         </>
     )

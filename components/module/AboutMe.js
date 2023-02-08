@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material"
+import { Typography,Button } from "@mui/material"
 import Image from "next/image"
 import styles from "./AboutMe.module.scss"
 
@@ -28,29 +28,44 @@ const AboutMe = () => {
                         fontWeight="bold"
                         color="Purple"
                     >
-                      I'm Javad Taghizadeh, A Professor Of Physic At KNTU University
+                        I'm Javad Taghizadeh, A Professor Of Physic At KNTU University
                     </Typography>
                     <Typography
                         fontSize={10}
                         fontWeight="bold"
                         color="Gray"
                     >
-                     A scholar of social science, technology, and social inequality. I’m the author of Technology and Everyday Life, Solar Power in the Developing Countries. You can also find my words in a wide range of scholarly and mainstream publications including the The Nation, New York Times, Social Text, American Quarterly, Jacobin, and The Atlantic. As Professor of sociology at KNTU university, I teach a social science research course for social justice, youth culture, and material culture.I help my students understand and practice different approaches to problem solving, including political theory and social scientific methodologies. I created this website to share my life and my practice with you.
+                        A scholar of social science, technology, and social inequality. I’m the author of Technology and Everyday Life, Solar Power in the Developing Countries. You can also find my words in a wide range of scholarly and mainstream publications including the The Nation, New York Times, Social Text, American Quarterly, Jacobin, and The Atlantic. As Professor of sociology at KNTU university, I teach a social science research course for social justice, youth culture, and material culture.I help my students understand and practice different approaches to problem solving, including political theory and social scientific methodologies. I created this website to share my life and my practice with you.
                     </Typography>
                     <Typography
                         fontSize={10}
                         fontWeight="bold"
                         color="Gray"
                     >
-                     A scholar of social science, technology, and social inequality. I’m the author of Technology and Everyday Life, Solar Power in the Developing Countries. You can also find my words in a wide range of scholarly and mainstream publications including the The Nation, New York Times, Social Text, American Quarterly, Jacobin, and The Atlantic. As Professor of sociology at KNTU university, I teach a social science research course for social justice, youth culture, and material culture.I help my students understand and practice different approaches to problem solving, including political theory and social scientific methodologies. I created this website to share my life and my practice with you.
+                        A scholar of social science, technology, and social inequality. I’m the author of Technology and Everyday Life, Solar Power in the Developing Countries. You can also find my words in a wide range of scholarly and mainstream publications including the The Nation, New York Times, Social Text, American Quarterly, Jacobin, and The Atlantic. As Professor of sociology at KNTU university, I teach a social science research course for social justice, youth culture, and material culture.I help my students understand and practice different approaches to problem solving, including political theory and social scientific methodologies. I created this website to share my life and my practice with you.
                     </Typography>
                     <Typography
                         fontSize={10}
                         fontWeight="bold"
                         color="Gray"
                     >
-                     A scholar of social science, technology, and social inequality. I’m the author of Technology and Everyday Life, Solar Power in the Developing Countries. You can also find my words in a wide range of scholarly and mainstream publications including the The Nation, New York Times, Social Text, American Quarterly, Jacobin, and The Atlantic. As Professor of sociology at KNTU university, I teach a social science research course for social justice, youth culture, and material culture.I help my students understand and practice different approaches to problem solving, including political theory and social scientific methodologies. I created this website to share my life and my practice with you.
+                        A scholar of social science, technology, and social inequality. I’m the author of Technology and Everyday Life, Solar Power in the Developing Countries. You can also find my words in a wide range of scholarly and mainstream publications including the The Nation, New York Times, Social Text, American Quarterly, Jacobin, and The Atlantic. As Professor of sociology at KNTU university, I teach a social science research course for social justice, youth culture, and material culture.I help my students understand and practice different approaches to problem solving, including political theory and social scientific methodologies. I created this website to share my life and my practice with you.
                     </Typography>
+                    <Button
+                        variant="contained"
+                        sx={{ margin: "10px 0px" }}
+                        color="warning"
+                        onClick={() => {
+                            alert("push to about me page")
+                        }}
+                    >
+                        <Typography
+                            fontSize={15}
+                            fontWeight="bold"
+                        >
+                            More
+                        </Typography>
+                    </Button>
 
                 </div>
             </div>
