@@ -1,5 +1,6 @@
 import AboutMe from '../module/AboutMe';
 import Banner from '../module/Banner';
+import Featured from '../module/Featured';
 import WorkProject from '../module/WorkProject';
 
 const HomePage = () => {
@@ -8,6 +9,7 @@ const HomePage = () => {
         <Banner />
         <AboutMe />
         <WorkProject />
+        <Featured />
     </div>
   )
 }
