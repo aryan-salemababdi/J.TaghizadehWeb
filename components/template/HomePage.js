@@ -2,6 +2,7 @@ import AboutMe from '../module/AboutMe';
 import Banner from '../module/Banner';
 import Featured from '../module/Featured';
 import WorkProject from '../module/WorkProject';
+import Blog from './../module/Blog';
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
         <AboutMe />
         <WorkProject />
         <Featured />
+        <Blog />
     </div>
   )
 }
